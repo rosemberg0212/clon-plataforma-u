@@ -208,6 +208,9 @@
   font-size: 13px;
   font-weight: bold;
 }
+.contenedor .conte-titulos .banner-1 {
+  position: relative;
+}
 .contenedor .conte-titulos .banner-1 .imgA {
   width: 674px;
   height: 228px;
@@ -218,6 +221,34 @@
   height: 100%;
   object-fit: contain;
   border-radius: 7px;
+}
+.contenedor .conte-titulos .banner-1 .conte {
+  width: 405px;
+  height: 98px;
+  background-color: #12434491;
+  margin-left: 14px;
+  border-radius: 0 8px 8px 0;
+  position: absolute;
+  top: 70px;
+}
+.contenedor .conte-titulos .banner-1 .conte h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.contenedor .conte-titulos .banner-1 .conte p {
+  color: #afd8db;
+  font-weight: bold;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+.contenedor .conte-titulos .banner-2 {
+  width: 674px;
+  height: 228px;
+  margin: auto;
+  margin-top: 22px;
+  background: linear-gradient(to bottom, rgba(157, 157, 202, 0.548), white);
 }
 
 /*# sourceMappingURL=main.css.map */

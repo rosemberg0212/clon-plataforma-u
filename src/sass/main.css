@@ -85,6 +85,7 @@
   background-color: #d9522c;
   border-radius: 5px;
   color: #ffffff;
+  cursor: pointer;
 }
 .contenedor .conte-info .card-1 .intera a {
   color: #6f921c;

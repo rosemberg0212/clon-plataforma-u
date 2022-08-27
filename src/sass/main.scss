@@ -6,7 +6,7 @@ $shadowLetras: #124344;
 $degradado: linear-gradient(to right, rgba(157, 157, 202, 0.548), white);
 $paddingCard: 29px;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,8 @@ $paddingCard: 29px;
     align-items: $cruzado;
     flex-wrap: $wrap;
 }
-.title{
+
+.title {
     height: 47px;
     font-size: 1rem;
     font-weight: bold;
@@ -29,21 +30,25 @@ $paddingCard: 29px;
     text-shadow: 1px 1px 1px $shadowLetras;
     text-align: center;
 }
-.shadow{
-    box-shadow: 0   2px 3px rgb(0 0 0 /40%);
+
+.shadow {
+    box-shadow: 0 2px 3px rgb(0 0 0 /40%);
 }
+
 .menu2 {
     background-color: rgba(15, 14, 14, 0.856);
     height: 60px;
     width: 100%;
     @extend .shadow;
 
-    ul{
+    ul {
         @include flex-b(center, center, nowrap);
-        li{
+
+        li {
             list-style: none;
             margin: 10px 45px;
-            a{
+
+            a {
                 color: $letrasTitle;
                 text-decoration: none;
                 font-size: 1.4rem;
@@ -52,7 +57,7 @@ $paddingCard: 29px;
     }
 }
 
-.contenedor{
+.contenedor {
     width: 1003px;
     height: 1326px;
     margin: 20px auto;
@@ -61,34 +66,39 @@ $paddingCard: 29px;
     grid-template-columns: 302px auto;
     padding-top: 5px;
 
-    .conte-info{
-        .card-1{
-            h2{
+    .conte-info {
+        .card-1 {
+            h2 {
                 @extend .title;
                 background: $titleOrange;
                 @include flex-b(center, center, nowrap)
             }
 
-            .intera{
+            .intera {
                 height: 141px;
                 font-size: 13px;
                 background: $degradado;
                 padding: 20px 0 0 30px;
-                input{
+
+                input {
                     width: 106px;
                     height: 24px;
                     margin-left: 32px;
                 }
-                .selec{
+
+                .selec {
                     padding-bottom: 5px;
                 }
-                .contra{
+
+                .contra {
                     margin-top: 1px;
                     margin-bottom: 10px;
-                    input{
+
+                    input {
                         margin-left: 17px;
                     }
-                    button{
+
+                    button {
                         width: 79px;
                         height: 34px;
                         border: none;
@@ -97,20 +107,23 @@ $paddingCard: 29px;
                         color: #ffffff;
                     }
                 }
-                a{
+
+                a {
                     color: $passw;
                 }
             }
         }
 
-        .card-2{
+        .card-2 {
             padding-top: $paddingCard;
-            h2{
+
+            h2 {
                 @extend .title;
                 background: $titleYellow;
                 @include flex-b(center, center, nowrap)
             }
-            .conte{
+
+            .conte {
                 background: $degradado;
                 height: 61px;
                 color: $shadowLetras;
@@ -122,22 +135,27 @@ $paddingCard: 29px;
             }
         }
 
-        .card-3{
+        .card-3 {
             padding-top: $paddingCard;
-            h2{
+
+            h2 {
                 @extend .title;
                 background: $titleYellow;
                 @include flex-b(center, center, nowrap)
             }
-            .conte-guias{
+
+            .conte-guias {
                 background: $degradado;
-                ul{
+
+                ul {
                     display: grid;
                     gap: 20px;
                     padding: 20px 30px 20px 30px;
-                    li{
+
+                    li {
                         list-style: none;
-                        a{
+
+                        a {
                             font-size: 13px;
                             font-weight: bold;
                         }
@@ -146,12 +164,13 @@ $paddingCard: 29px;
             }
         }
 
-        .img1{
+        .img1 {
             width: 76px;
             height: 56px;
             border: solid 4px #ffffff;
             margin-top: 4px;
             border-radius: 6px;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -159,26 +178,33 @@ $paddingCard: 29px;
             }
         }
 
-        .card-4{
+        .card-4 {
             margin-top: $paddingCard;
-            h2{
+
+            h2 {
                 @extend .title;
                 background: $titleYellow;
                 @include flex-b(center, center, nowrap)
             }
-            .conte-campus{
+
+            .conte-campus {
                 background: $degradado;
-                ul{
+
+                ul {
                     padding: 30px 30px 20px 30px;
-                    li{
+
+                    li {
                         display: flex;
-                        .nombre{
+
+                        .nombre {
                             padding-left: 15px;
-                            a{
+
+                            a {
                                 font-size: 13px;
                                 font-weight: bold;
                             }
-                            p{
+
+                            p {
                                 font-size: 13px;
                             }
                         }
@@ -187,47 +213,55 @@ $paddingCard: 29px;
             }
         }
 
-        .card-5{
+        .card-5 {
             margin-top: $paddingCard;
-            h2{
+
+            h2 {
                 @extend .title;
                 background: $titleYellow;
                 @include flex-b(center, center, nowrap)
             }
-            .conte-contac{
+
+            .conte-contac {
                 background: $degradado;
-                .infoC{
+
+                .infoC {
                     display: flex;
                     padding: 20px 0 20px 30px;
                     gap: 20px;
-                    .imgA{
+
+                    .imgA {
                         width: 76px;
                         height: 56px;
                         border: solid 4px #ffffff;
                         border-radius: 6px;
-                        img{
+
+                        img {
                             width: 100%;
                             height: 100%;
                             object-fit: fill;
                         }
                     }
-                    a{
+
+                    a {
                         font-size: 13px;
                         font-weight: bold;
                     }
-                } 
+                }
             }
         }
     }
 
-    .conte-titulos{
-        .banner-1{
+    .conte-titulos {
+        .banner-1 {
             position: relative;
-            .imgA{
+
+            .imgA {
                 width: 674px;
                 height: 228px;
                 margin: auto;
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
@@ -235,7 +269,7 @@ $paddingCard: 29px;
                 }
             }
 
-            .conte{
+            .conte {
                 width: 405px;
                 height: 98px;
                 background-color: #12434491;
@@ -244,14 +278,15 @@ $paddingCard: 29px;
                 position: absolute;
                 top: 70px;
 
-                
-                h2{
+
+                h2 {
                     color: $letrasTitle;
                     text-align: center;
                     font-size: 1.4rem;
-                    
+
                 }
-                p{
+
+                p {
                     color: #afd8db;
                     font-weight: bold;
                     position: absolute;
@@ -261,14 +296,15 @@ $paddingCard: 29px;
             }
         }
 
-        .banner-2{
+        .banner-2 {
             width: 674px;
             height: 137x;
             margin: auto;
             margin-top: 22px;
             background: linear-gradient(to bottom, #5e6e6e33, white);
             border-radius: 8px 8px 0 0;
-            h2{
+
+            h2 {
                 font-size: 25px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: justify;
@@ -277,13 +313,15 @@ $paddingCard: 29px;
                 letter-spacing: -2px;
                 color: #214243;
             }
-            .redirec{
+
+            .redirec {
                 background-color: $titleYellow;
                 width: 100px;
                 height: 28px;
                 margin-left: 25px;
                 @include flex-b(center, center, nowrap);
-                a{
+
+                a {
                     font-size: 14px;
                     font-weight: bold;
                     color: #ffffff;
@@ -293,15 +331,15 @@ $paddingCard: 29px;
             }
         }
 
-        .banner-3{
+        .banner-3 {
             width: 674px;
-            height: 111x;
+            height: 111px;
             margin: auto;
             margin-top: 22px;
             background: linear-gradient(to bottom, #5e6e6e33, white);
             border-radius: 8px 8px 0 0;
 
-            h2{
+            h2 {
                 font-size: 25px;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: justify;
@@ -311,13 +349,14 @@ $paddingCard: 29px;
                 color: #214243;
             }
 
-            .redirec{
+            .redirec {
                 background-color: $titleYellow;
                 width: 100px;
                 height: 28px;
                 margin-left: 25px;
                 @include flex-b(center, center, nowrap);
-                a{
+
+                a {
                     font-size: 14px;
                     font-weight: bold;
                     color: #ffffff;
@@ -326,9 +365,86 @@ $paddingCard: 29px;
                 }
             }
         }
+
+        .banner-4 {
+            width: 674px;
+            height: 211px;
+            margin: auto;
+            margin-top: 22px;
+            background: linear-gradient(to bottom, #5e6e6e33, white);
+            border-radius: 8px 8px 0 0;
+
+            h2 {
+                font-size: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: justify;
+                padding: 45px 25px 0 25px;
+                line-height: normal;
+                letter-spacing: -2px;
+                color: #214243;
+            }
+
+            h4 {
+                font-size: 1rem;
+                padding: 10px 25px 0 25px;
+            }
+
+            .flex {
+                display: flex;
+                margin-top: 2%;
+
+                gap: 20px;
+
+                .img {
+                    width: 186px;
+                    height: 166px;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    border: solid 1px rgb(0, 0, 0, .2);
+                    padding: 20px;
+                    margin-left: 3%;
+                }
+            }
+
+            .info-b {
+                width: 100%;
+                position: relative;
+                .btn {
+                    background-color: $titleYellow;
+                    width: 270px;
+                    height: 28px;
+                    text-align: center;
+                    a {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #ffffff;
+                        text-decoration: none;
+                        text-shadow: 1px 1px 1px $shadowLetras;
+                    }
+                }
+
+                .escuesta {
+                    margin-bottom: 35px;
+                }
+
+                .convo{
+                    width: 240px;
+                }
+
+                .logo-fin{
+                    position: absolute;
+                    right: 2%;
+                    bottom: 0;
+                    width: 165px;
+                    height: 70px;
+                }
+            }
+
+        }
     }
 
-    
+
 }
-
-
